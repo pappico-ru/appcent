@@ -13,12 +13,12 @@
 a {outline: none;}
 
 html, body {height: 100%;}
-body {overflow-x: hidden; margin: 0; font-family: 'ubunturegular'; font-size: 14px; color: #ffffff;}
+body {margin: 0; font-family: 'ubunturegular'; font-size: 14px; color: #ffffff; background: #2a2f3b url(../images/bg_blur.jpg) no-repeat top center;}
 
 .ac-header {margin: 16px 0 0 0;}
 .ac-wrapper {height: 100%; width: 100%; position: relative;}
 
-.ac-video-container {width: 100%; height: 825px; position: absolute; top: 0; left: 0;}
+.ac-video-container {width: 100%; height: 825px; position: absolute; top: 0; left: 0; overflow: hidden;}
 .ac-video-bg {background-color: rgba(42, 47, 59, 0.85); width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2;}
 .ac-video {width: auto; height: 100%; position: absolute; top: 0; left: 0; z-index: 2;}
 
@@ -31,7 +31,7 @@ body {overflow-x: hidden; margin: 0; font-family: 'ubunturegular'; font-size: 14
 .ac-nav > li a {color: #ffffff; font-size: 15px; line-height: 36px; text-decoration: none;}
 .ac-nav > li a:hover {color: #fceb55;}
 
-.ac-nav > li.ac-lang {border-left: 3px solid #67686d; position: relative; padding-left: 36px; margin-right: 0;}
+.ac-nav > li.ac-lang {border-left: 3px solid #67686d; position: relative; padding-left: 36px; margin-right: 0; float: right;}
 .ac-lang div {cursor: pointer;}
 .ac-lang span {color: #959597;}
 .ac-lang ul {list-style: none; opacity: 0; margin: 0; position: absolute; text-align: center; background-color: #464646; padding: 4px 6px; border-radius: 4px; transition: opacity 0.2s ease 0s; height: 0;}
@@ -60,7 +60,7 @@ body {overflow-x: hidden; margin: 0; font-family: 'ubunturegular'; font-size: 14
 .ac-social-icon.ac-icon-twitter {background-image: url(../images/twitter.svg);}
 .ac-social-icon.ac-icon-youtube {background-image: url(../images/youtube.svg);}
 
-.ac-content-container {padding: 72px 0 80px 0;}
+.ac-content-container {padding: 72px 0 80px 0; display: flex; flex-flow: row wrap;}
 .ac-iphone {width: 456px; height: 525px; background: url(../images/iphone2x.png) no-repeat center center; background-size: contain; margin-right: 20px;}
 
 .ac-content {width: 484px;}
@@ -68,9 +68,9 @@ body {overflow-x: hidden; margin: 0; font-family: 'ubunturegular'; font-size: 14
 
 .ac-download-buttons {margin: 0 -8px;}
 .ac-btn {border-radius: 6px; border: 1px solid #ffffff; display: inline-block; width: 180px; height: 56px; cursor: pointer; margin: 0 8px;}
-.ac-btn:hover {background-color: rgba(255, 255, 255, 0.5);}
+.ac-btn:hover {background-color: rgba(255, 255, 255, 0.1);}
 
-.ac-phone-input-container {width: 379px; clear: both; margin: 10px 0 0 0; position: relative;}
+.ac-phone-input-container {width: 379px; clear: both; margin: 10px 0 0 0; position: relative; height: 46px;}
 .ac-phone-input-container input {border: 1px solid #fceb55; border-radius: 5px 0 0 5px; height: 46px; background-color: transparent; width: calc(100% - 68px); float: left;}
 .ac-phone-input-container button {background: #fceb55 url(../images/send.png) no-repeat center center; background-size: contain; border-radius: 5px; border: 1px solid #fceb55; height: 46px; width: 72px; margin-left: -4px; float: left; cursor: pointer;}
 
@@ -82,4 +82,75 @@ body {overflow-x: hidden; margin: 0; font-family: 'ubunturegular'; font-size: 14
 .ac-input-block.ac-hide,
 .ac-sent-app-btn.ac-hide {z-index: 9; opacity: 0;}
 
-footer {padding: 80px 0 0 0;}
+.ac-mobile-menu {display: none; width: 20px; height: 20px; background: url(../images/menu.svg) no-repeat center center; background-size: contain; cursor: pointer; margin: 9px 0 0 0;}
+
+.ac-copyright {font-size: 14px; height: 50px; line-height: 50px; color: rgba(255, 255, 255, 0.5); position: relative; padding-left: 20px; padding-right: 15px; border-right: 1px solid #7d7c82;}
+.ac-copyright:before {width: 16px; height: 15px; display: inline-block; content: ""; background: url(../images/copy.svg) no-repeat center center; background-size: contain; position: absolute; top: 50%; margin-top: -7.5px; left: 0;}
+.ac-looi-logo {width: 49px; height: 33px; background: url(../images/looi-logo.svg) no-repeat center center; background-size: contain; margin-top: 6px; margin-left: 15px;}
+
+.ac-download-buttons-bottom {display: none;}
+
+.ac-free-gift-card-container {font-size: 18px; line-height: 33px; height: 33px; margin-top: 45px;}
+.ac-free-gift-card-container p {display: inline-block; line-height: 33px; height: 33px; padding: 0; margin: 0 15px 0 0;}
+.ac-free-gift-card-logos {display: inline-block; width: 218px; height: 33px; background: url(../images/free-gift-card-logos.png) no-repeat center center; background-size: contain;}
+
+@media (max-width: 960px) {
+	body {background: #2a2f3b url(../images/bg_mobile.jpg) no-repeat top center;}
+	footer {display: flex; flex-flow: row wrap;}
+
+	.ac-free-gift-card-container {display: flex; flex-flow: row wrap; height: auto; justify-content: space-around; flex-direction: column;}
+	.ac-free-gift-card-logos,
+	.ac-free-gift-card-container p {float: none; width: 100%; margin: 0; padding: 0}
+	.ac-free-gift-card-logos {margin: 20px 0 50px 0;}
+
+	.ac-btn {margin-bottom: 15px; background-color: #f7e856; border-color: #f7e856;}
+
+	.ac-apple-btn {background-image: url(../images/apple-btn-mobile.png);}
+	.ac-google-btn {background-image: url(../images/google-btn-mobile.png);}
+
+	.container {width: 320px; padding: 0 16px;}
+	.ac-video-container {display: none;}
+
+	footer {text-align: center; justify-content: space-around; flex-direction: column;}
+
+	.ac-creator-block p {display: none;}
+
+	.ac-creator-block {order: 1; -webkit-order: 1; margin: auto;}
+	.ac-copyright {order: 2; -webkit-order: 2; margin: auto; border: 0; padding-right: 0;}
+	.ac-contact-block {order: 3; -webkit-order: 3; margin: 25px auto 12px auto; width: 100%; line-height: 24px;}
+	.ac-contact-block p {line-height: 24px;}
+	.ac-social-block {order: 4; -webkit-order: 4; margin: auto; width: 100%;}
+	.ac-looi-logo {order: 5; -webkit-order: 5; margin: 28px auto 35px auto; width: 100%;}
+
+	.ac-phone-input-container {display: none;}
+
+	.ac-content-container {text-align: center; justify-content: space-around;}
+
+	.ac-content {width: 320px; text-align: center; order: 1; -webkit-order: 1; margin: auto;}
+	.ac-iphone {order: 2; -webkit-order: 2; margin: auto;}
+	.ac-download-buttons-bottom {order: 3; -webkit-order: 3; display: block; margin: 52px auto 52px auto;}
+
+	.ac-creator-logo {width: 117px; height: 20px;}
+
+	.ac-mobile-menu {display: inline-block;}
+
+	.ac-nav-container {display: none;}
+
+	.ac-show-menu .ac-nav-container {display: block; float: none; position: fixed; top: 0; left: 0; right: 0; font-size: 24px; background-color: rgba(42, 47, 59, 0.98); height: 100%; text-align: center; padding: 16px 0 0 0;}
+	.ac-show-menu .ac-nav {float: none; width: 320px; padding: 0 16px; margin: 0 auto; position: relative;}
+	.ac-show-menu .ac-nav li a {font-size: 24px;}
+	.ac-show-menu .ac-nav > li.ac-lang,
+	.ac-show-menu .ac-nav > li {float: none; border: 0; padding: 0; margin: 0; display: block; line-height: 57px; height: 57px;}
+
+	.ac-show-menu .ac-close-menu {display: block; position: absolute; width: 20px; height: 20px; background: url(../images/close.png) no-repeat center center; background-size: contain; top: 10px; right: 16px; z-index: 10; cursor: pointer; margin: 0 0 40px 40px;}
+	.ac-show-menu {overflow: hidden;}
+
+	.ac-content-container {padding: 69px 0 0 0;}
+	.ac-title-content {margin: 0;}
+	.ac-iphone {background-image: url(../images/iphone-mobile.png); width: calc(100% + 32px); margin: 0 -16px; height: 969px;}
+
+	.ac-lang div {width: 190px; margin: 0 auto;}
+
+	.ac-lang ul {position: static; width: 50%; margin: 0 auto;}
+	.ac-lang ul li {line-height: 25px; height: 30px;}
+}
