@@ -4,15 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Appcent</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 </head>
 <body class="">
 <div class="ac-wrapper">
 	<div class="container">
-		<header class="ac-header">
-			<a class="ac-logo _float_left" href="/"></a>
-			<i class="ac-mobile-menu _float_right"></i>
-			<div class="_float_right ac-nav-container">
+		<header class="ac-header row">
+			<a class="ac-logo pull-left" href="/"></a>
+			<i class="ac-mobile-menu pull-right"></i>
+			<div class="pull-right ac-nav-container">
 				<nav class="ac-nav">
 					<i class="ac-close-menu"></i>
 					<li class="ac-lang">
@@ -33,9 +34,9 @@
 				</nav>
 			</div>
 		</header>
-		<div class="ac-content-container _clear_both">
-			<div class="_float_left ac-iphone"></div>
-			<div class="_float_left ac-content">
+		<div class="ac-content-container row">
+			<div class="col-lg-6 ac-pc ac-iphone"></div>
+			<div class="pull-left ac-content">
 				<p class="ac-title-content">Never spend real money<br/>in games again!</p>
 				<p class="_font_size_18">Download free apps from AppCent<br />and we will pay for you!</p>
 				<div class="ac-download-buttons">
@@ -50,33 +51,39 @@
 					</div>
 				</div>
 				<div class="ac-free-gift-card-container _clear_both">
-					<p class="_float_left"><u>Get free Gift Card</u> for</p>
+					<p class="_float_left"><a href="#">Get free Gift Card</a> for</p>
 					<div class="ac-free-gift-card-logos _float_left"></div>
 				</div>
 			</div>
+			<div class="col-lg-6 ac-mobile ac-iphone"></div>
 			<div class="ac-download-buttons-bottom">
 				<a class="ac-btn ac-apple-btn ac-no-url"></a>
 				<a class="ac-btn ac-google-btn"></a>
 			</div>
 		</div>
-		<footer class="_clear_both">
-			<div class="_float_left ac-creator-block">
+		<footer class="row">
+			<div class="pull-left ac-creator-block">
 				<p>From the creators of</p>
 				<a class="ac-creator-logo" href="http://wake-app.net" target="_blank"></a>
 			</div>
-			<div class="_float_left ac-contact-block">
+			<div class="pull-right ac-mobile ac-copyright-container">
+				<div class="ac-copyright">2015</div>
+			</div>
+			<div class="pull-left ac-contact-block">
 				<p>Information: <a href="mailto:contact@appcent.ru">contact@appcent.ru</a></p>
 				<p>Promotion: <a href="mailto:sale@appcent.ru">sale@appcent.ru</a></p>
 				<p>Technical questions: <a href="mailto:tech@appcent.ru">tech@appcent.ru</a></p>
 			</div>
-			<ul class="_float_left ac-social-block">
+			<ul class="pull-left ac-social-block">
 				<li><a href="#" class="ac-social-icon ac-icon-facebook"></a></li>
 				<li><a href="#" class="ac-social-icon ac-icon-instagram"></a></li>
 				<li><a href="#" class="ac-social-icon ac-icon-twitter"></a></li>
 				<li><a href="#" class="ac-social-icon ac-icon-youtube"></a></li>
 			</ul>
-			<div class="ac-looi-logo _float_right"></div>
-			<div class="ac-copyright _float_right">2015</div>
+			<div class="ac-looi-logo pull-right"></div>
+			<div class="pull-right ac-pc ac-copyright-container">
+				<div class="ac-copyright">2015</div>
+			</div>
 		</footer>
 	</div>
 	<div class="ac-video-container">
