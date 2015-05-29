@@ -3,97 +3,122 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Appcent</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 </head>
-<body class="">
-<div class="ac-wrapper">
-	<div class="container">
-		<header class="ac-header row">
-			<a class="ac-logo pull-left" href="/"></a>
-			<i class="ac-mobile-menu pull-right"></i>
-			<div class="pull-right ac-nav-container">
-				<nav class="ac-nav">
-					<i class="ac-close-menu"></i>
-					<li class="ac-lang">
-						<div><span><span data-select-lang="true" data-full-text="English" data-short-text="En">En</span><i class="ac-arrow-lang"></i></span></div>
-						<ul>
-							<li><a data-select-lang="true" href="#" data-full-text="English" data-short-text="Fr">Fr</a></li>
-							<li><a data-select-lang="true" href="#">Ge</a></li>
-							<li><a data-select-lang="true" href="#">It</a></li>
-							<li><a data-select-lang="true" href="#">Ru</a></li>
-							<li><a data-select-lang="true" href="#">吉恋</a></li>
-							<li><a data-select-lang="true" href="#">Ge</a></li>
-							<li><a data-select-lang="true" href="#">It</a></li>
-						</ul>
-					</li>
-					<li><a href="#">How does it work?</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="#">Advertisers</a></li>
-				</nav>
+<body>
+
+<div class="container">
+	<div class="ac-header row">
+		<a class="ac-logo pull-left" href="#"></a>
+		<span class="ac-mobile-menu pull-right"></span>
+		<ul class="ac-nav pull-right">
+			<li class="ac-lang">
+				<a class="ac-dropdown-icon" href="#" data-select-lang="true" data-short-text="En" data-full-text="English">En</a>
+				<ul class="ac-dropdown">
+					<li><a href="#" data-select-lang="true" data-short-text="En" data-full-text="English">En</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="Fr" data-full-text="Fr">Fr</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="Ge" data-full-text="Ge">Ge</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="It" data-full-text="It">It</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="Ру" data-full-text="Русский">Ру</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="吉恋" data-full-text="吉恋">吉恋</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="Ge" data-full-text="Ge">Ge</a></li>
+					<li><a href="#" data-select-lang="true" data-short-text="It" data-full-text="It">It</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Advertisers</a></li>
+			<li><a href="#">Partners</a></li>
+			<li><a href="#">How does it work?</a></li>
+			<li class="ac-close-menu"></li>
+		</ul>
+	</div>
+	<div class="ac-main-content row">
+		<div class="ac-iphone ac-pc col-md-6">
+			<div class="ac-video-button-container"></div>
+		</div>
+		<div class="ac-content col-md-6">
+			<p class="ac-title-content">Never spend real money<br/>in games again!</p>
+
+			<p class="ac-text">Download free apps from AppCent<br/>and we will pay for you!</p>
+
+			<div class="ac-download-buttons">
+				<a class="ac-btn ac-apple-btn"></a>
+				<a class="ac-btn ac-android-btn"></a>
 			</div>
-		</header>
-		<div class="ac-content-container row">
-			<div class="col-lg-6 ac-pc ac-iphone"></div>
-			<div class="pull-left ac-content">
-				<p class="ac-title-content">Never spend real money<br/>in games again!</p>
-				<p class="_font_size_18">Download free apps from AppCent<br />and we will pay for you!</p>
-				<div class="ac-download-buttons">
-					<a class="ac-btn ac-apple-btn ac-no-url"></a>
-					<a class="ac-btn ac-google-btn"></a>
+			<div class="ac-phone-input-container">
+				<div class="ac-sent-app-container">
+					<a class="ac-sent-app-btn ac-pc">Send me the app to a phone # or email</a>
 				</div>
-				<div class="ac-phone-input-container">
-					<a class="ac-sent-app-btn">Send me the app to a phone # or email</a>
-					<div class="ac-input-block ac-hide">
-						<input value="">
-						<button></button>
-					</div>
+				<div class="ac-phone-input-block ac-hide">
+					<input type="text" value="">
+					<button class="ac-phone-input-btn"></button>
 				</div>
-				<div class="ac-free-gift-card-container _clear_both">
-					<p class="_float_left"><a href="#">Get free Gift Card</a> for</p>
-					<div class="ac-free-gift-card-logos _float_left"></div>
+				<div class="ac-send-message-container ac-hide">
+					<p>Message has been sent to you.</p>
+					<p>I didn’t receive anything. <span class="ac-clock"><i class="ac-second">0:16</i> Send again</span><a class="ac-send-again hide">Send again</a></p>
 				</div>
 			</div>
-			<div class="col-lg-6 ac-mobile ac-iphone"></div>
-			<div class="ac-download-buttons-bottom">
-				<a class="ac-btn ac-apple-btn ac-no-url"></a>
-				<a class="ac-btn ac-google-btn"></a>
+			<div class="ac-free-gift-card-container">
+				<span class="pull-left"><a href="#" class="ac-no-url">Get free Gift Card</a> for</span>
+				<div class="ac-free-gift-card-logos pull-left"></div>
 			</div>
 		</div>
-		<footer class="row">
-			<div class="pull-left ac-creator-block">
-				<p>From the creators of</p>
-				<a class="ac-creator-logo" href="http://wake-app.net" target="_blank"></a>
+		<div class="ac-iphone ac-mobile col-lg-6">
+			<div class="ac-video-button-container"></div>
+		</div>
+		<div class="ac-content">
+			<div class="ac-download-buttons ac-mobile">
+				<a class="ac-btn ac-apple-btn"></a>
+				<a class="ac-btn ac-android-btn"></a>
 			</div>
-			<div class="pull-right ac-mobile ac-copyright-container">
-				<div class="ac-copyright">2015</div>
-			</div>
-			<div class="pull-left ac-contact-block">
-				<p>Information: <a href="mailto:contact@appcent.ru">contact@appcent.ru</a></p>
-				<p>Promotion: <a href="mailto:sale@appcent.ru">sale@appcent.ru</a></p>
-				<p>Technical questions: <a href="mailto:tech@appcent.ru">tech@appcent.ru</a></p>
-			</div>
-			<ul class="pull-left ac-social-block">
-				<li><a href="#" class="ac-social-icon ac-icon-facebook"></a></li>
-				<li><a href="#" class="ac-social-icon ac-icon-instagram"></a></li>
-				<li><a href="#" class="ac-social-icon ac-icon-twitter"></a></li>
-				<li><a href="#" class="ac-social-icon ac-icon-youtube"></a></li>
-			</ul>
-			<div class="ac-looi-logo pull-right"></div>
-			<div class="pull-right ac-pc ac-copyright-container">
-				<div class="ac-copyright">2015</div>
-			</div>
-		</footer>
+		</div>
 	</div>
-	<div class="ac-video-container">
-		<video class="ac-video" autoplay loop>
-			<source src="video/shutterstock_v8396512.mp4" type="video/mp4" />
-			<source src="video/shutterstock_v8396512.webm" type="video/webm" />
-			<source src="video/shutterstock_v8396512.ogv" type="video/ogg" />
-			<p>Your browser doesn't support video</p>
-		</video>
-		<div class="ac-video-bg"></div>
+	<div class="row ac-footer">
+		<div class="ac-creator col-md-3">
+			<p>From the creators of</p>
+			<a class="ac-creator-logo" href="#"></a>
+		</div>
+		<div class="col-md-3 ac-mobile ac-copyright-content">
+			<div class="ac-copyright">2015</div>
+		</div>
+		<ul class="ac-contact-info col-md-3">
+			<li>Information: <a href="#">contact@appcent.ru</a></li>
+			<li>Promotion: <a href="#">sale@appcent.ru</a></li>
+			<li>Technical questions: <a href="#">tech@appcent.ru</a></li>
+		</ul>
+		<ul class="ac-social-icons col-md-3">
+			<li><a href="#" class="ac-social-icon ac-icon-facebook"></a></li>
+			<li><a href="#" class="ac-social-icon ac-icon-instagram"></a></li>
+			<li><a href="#" class="ac-social-icon ac-icon-twitter"></a></li>
+			<li><a href="#" class="ac-social-icon ac-icon-youtube"></a></li>
+		</ul>
+		<div class="col-md-3 ac-pc ac-copyright-content">
+			<div class="ac-copyright">2015</div>
+		</div>
+		<div class="ac-looi-logo col-md-3"></div>
+	</div>
+</div>
+<div class="ac-video-container">
+	<video class="ac-video" autoplay loop>
+		<source src="video/shutterstock_v8396512.mp4" type="video/mp4" />
+		<source src="video/shutterstock_v8396512.webm" type="video/webm" />
+		<source src="video/shutterstock_v8396512.ogv" type="video/ogg" />
+		<p>Your browser doesn't support video</p>
+	</video>
+</div>
+<div class="ac-popup-box hide">
+	<div class="ac-popup-container">
+		<div class="ac-popup-close"></div>
+		<div class="ac-popup-content">
+			<p>Open this website using your <span>iPhone</span>, <span>iPad</span> or <span>Android</span> device and click the “Get Appcent” button to download the official AppCent app.</p>
+			<p class="ac-form-lable">Or Fill in your e-mail address or phone number to get Appcent link as letter or SMS.</p>
+			<form class="ac-form-group">
+				<input class="ac-form-field ac-form-search_field" type="text" placeholder="E-mail or Phone #">
+				<button class="ac-form-field ac-form-btn">Send</button>
+			</form>
+			<div class="ac-form-iphone"></div>
+		</div>
 	</div>
 </div>
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
